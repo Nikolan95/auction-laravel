@@ -1,6 +1,6 @@
 Application was created using laravel framework. Requirements php 8+ composer 2 
 
-1. Clone project using git cone https://github.com/Nikolan95/auction-laravel.git
+1. Clone project using git clone https://github.com/Nikolan95/auction-laravel.git
 2. Navigate terminal to project folder and run composer install 
 3. create databse and enter database credentials to .env file
 4. run php artisan migrate --seed to migrate database structure and dummy data to database
