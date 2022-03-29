@@ -1,0 +1,23 @@
+{
+    "/js/jquery.min.js": "/js/jquery.min.js",
+    "/js/jquery-ui.min.js": "/js/jquery-ui.min.js",
+    "/js/bootstrap.bundle.min.js": "/js/bootstrap.bundle.min.js",
+    "/js/metismenu.min.js": "/js/metismenu.min.js",
+    "/js/waves.js": "/js/waves.js",
+    "/js/feather.min.js": "/js/feather.min.js",
+    "/js/jquery.slimscroll.min.js": "/js/jquery.slimscroll.min.js",
+    "/plugins/apexcharts/apexcharts.min.js": "/plugins/apexcharts/apexcharts.min.js",
+    "/plugins/chartjs/chart.min.js": "/plugins/chartjs/chart.min.js",
+    "/plugins/chartjs/roundedBar.min.js": "/plugins/chartjs/roundedBar.min.js",
+    "/plugins/jvectormap/jquery-jvectormap-2.0.2.min.js": "/plugins/jvectormap/jquery-jvectormap-2.0.2.min.js",
+    "/plugins/jvectormap/jquery-jvectormap-us-aea-en.js": "/plugins/jvectormap/jquery-jvectormap-us-aea-en.js",
+    "/pages/jquery.ecommerce_dashboard.init.js": "/pages/jquery.ecommerce_dashboard.init.js",
+    "/js/app.js": "/js/app.js",
+    "/css/bootstrap.min.css": "/css/bootstrap.min.css",
+    "/css/app.css": "/css/app.css",
+    "/css/app-material.css": "/css/app-material.css",
+    "/css/metisMenu.min.css": "/css/metisMenu.min.css",
+    "/css/icons.min.css": "/css/icons.min.css",
+    "/plugins/lightpick/lightpick.css": "/plugins/lightpick/lightpick.css",
+    "/plugins/jvectormap/jquery-jvectormap-2.0.2.css": "/plugins/jvectormap/jquery-jvectormap-2.0.2.css"
+}
