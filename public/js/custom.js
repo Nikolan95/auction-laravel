@@ -132,51 +132,6 @@ $('#deleteproductform').on('submit', function(event) {
         }
     });
 });
-// $('#bidForm').on('submit', function(event) {
-//     event.preventDefault();
-//     $.ajax({
-//         url:$(this).attr('action'),
-//         method:$(this).attr('method'),
-//         data:new FormData(this),
-//         processData:false,
-//         dataType:'json',
-//         contentType:false,
-//         success: function(data)
-//         {
-//             if(data.status == 0){
-//                 console.log(data);
-//                 Swal.fire({
-//                     icon: 'error',
-//                     title: 'Oops...',
-//                     text: data.error.price[0],
-//                 })
-//             }else{
-//                 console.log(data);
-//                 $('#bidActivity').prepend(
-//                     '<div class="activity-info">\n' +
-//                         '<div class="icon-info-activity">\n' +
-//                             '<i class="mdi mdi-checkbox-marked-circle-outline bg-soft-success"></i>\n' +
-//                         '</div>\n' +
-//                         '<div class="activity-info-text">\n' +
-//                             '<div class="d-flex justify-content-between align-items-center">\n' +
-//                                 '<p class="text-muted mb-0 font-14 w-75"><span class="text-dark font-14">'+ data.data.user.username +'</span>\n' +
-//                                     'has bidded $' + data.data.price +' on' + data.data.product.name + '\n' +
-//                                 '</p>\n' +
-//                                 '<span class="text-muted">'+ data.data.created_at + '</span>\n' +
-//                             '</div>\n' +
-//                         '</div>\n' +
-//                     '</div>'
-//                 );
-//                 $("#maxBid").text("$ "+ data.data.price);
-//                 Swal.fire(
-//                     'Success!',
-//                     'Bid has been placed',
-//                     'success'
-//                 )
-//             }
-//         }
-//     })
-// });
 
 $('#addfundsform').on('submit', function(event) {
     event.preventDefault();
