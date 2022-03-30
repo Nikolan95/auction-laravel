@@ -4,8 +4,9 @@ Application was created using laravel framework. Requirements php 8+ composer 2
 2. Navigate terminal to project folder and run composer install 
 3. create databse and enter database credentials to .env file
 4. run php artisan migrate --seed to migrate database structure and dummy data to database
-5. setup web-server or just run php artisan serve to start app
-6. Enjoy :)
+5. run php artisan key:generate to generate app keys
+6. setup web-server or just run php artisan serve to start app
+7. Enjoy :)
 
 Basic users credentials user1/user1 user2/user2
 Admin user credentials admin1/admin1 admi2/admin2
