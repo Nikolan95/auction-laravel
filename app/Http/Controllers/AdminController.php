@@ -13,10 +13,6 @@ class AdminController extends Controller
     {
         $products = Product::all();
 
-//        foreach ($products as $product){
-//            dd($product->highestBidUser());
-//        }
-
         return view('admin.dashboard', [
             'products' => $products
         ]);

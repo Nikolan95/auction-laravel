@@ -26,7 +26,7 @@ class AutoBidService
             }
             else{
                 $checkAuto[0]->delete();
-                AutoBid::create([
+                $autobid = AutoBid::create([
                     'user_id' => Auth::id(),
                     'product_id' => $request->input('product_id'),
                     'max_value' => $request->input('max_value')
@@ -36,7 +36,7 @@ class AutoBidService
                     'product_id' => $request->input('product_id'),
                     'price' =>  $checkAuto[0]->max_value + 1
                 ]);
-                event(new OutBiddedEvent($user, $product));
+                    event(new OutBiddedEvent($user, $product));
                 return 'outbid';
             }
         }

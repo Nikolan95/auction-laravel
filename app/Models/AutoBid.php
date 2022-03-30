@@ -10,7 +10,6 @@ class AutoBid extends Model
     use HasFactory;
     protected $table = "auto_bids";
     protected $fillable = [
-        'id',
         'user_id',
         'product_id',
         'max_value'

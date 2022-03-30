@@ -2,7 +2,9 @@
 
 namespace App\Services;
 
+use App\Events\OutBiddedEvent;
 use App\Http\Requests\StoreBidRequest;
+use App\Models\AutoBid;
 use App\Models\Bid;
 use App\Models\Product;
 use Illuminate\Support\Facades\Auth;
@@ -12,7 +14,13 @@ class CreateBidService
     public function storeBid(StoreBidRequest $request)
     {
         Bid::where('user_id', Auth::id())->where('product_id', $request->input('product_id'))->update(['is_active' => false]);
-
+        $checkAutoBid = AutoBid::where('product_id',  $request->input('product_id'))->with('user')->with('product')->first();
+        if($checkAutoBid) {
+            if ($request->input('price') > $checkAutoBid->max_value && $checkAutoBid->user_id != Auth::id()) {
+                event(new OutBiddedEvent($checkAutoBid->user, $checkAutoBid->product));
+                $checkAutoBid->delete();
+            }
+        }
         $bid = Bid::create([
             'user_id' => Auth::id(),
             'product_id' => $request->input('product_id'),
