@@ -58,10 +58,12 @@ class ProductController extends Controller
     {
         if(isset($_GET['searchquery'])){
             $searchText = $_GET['searchquery'];
+            $notifications = auth()->user()->unreadNotifications;
             $products = Product::where('auction_ends', '>', now())
                 ->where('name', 'LIKE', '%'. $searchText . '%')
                 ->orWhere('description', 'LIKE', '%'. $searchText . '%')->with('image')->paginate(8);
             return view('products.all', [
+                'notifications' => $notifications,
                 'products' => $products
             ]);
         }

@@ -66,11 +66,6 @@
 <script src="{{ asset('plugins/datatables/jquery.dataTables.min.js') }}"></script>
 <script src="{{ asset('plugins/datatables/dataTables.bootstrap4.min.js') }}"></script>
 
-{{--<script src="{{ asset('plugins/chartjs/chart.min.js') }}"></script>--}}
-{{--<script src="{{ asset('plugins/chartjs/roundedBar.min.js') }}"></script>--}}
-{{--<script src="{{ asset('plugins/jvectormap/jquery-jvectormap-2.0.2.min.js') }}"></script>--}}
-{{--<script src="{{ asset('plugins/jvectormap/jquery-jvectormap-us-aea-en.js') }}"></script>--}}
-{{--<script src="{{ asset('pages/jquery.ecommerce_dashboard.init.js') }}"></script>--}}
 <!-- Sweet-Alert  -->
 <script src="{{asset('plugins/sweetalert/sweetalert2.min.js')}}"></script>
 <script src="{{asset('js/jquery.sweet-alert.init.js')}}"></script>
