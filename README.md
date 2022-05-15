@@ -8,5 +8,5 @@ Application was created using laravel framework. Requirements php 8+ composer 2
 6. setup web-server or just run php artisan serve to start app
 7. Enjoy :)
 
-Basic users credentials user1/user1 user2/user2
-Admin user credentials admin1/admin1 admi2/admin2
+Basic users credentials JonDoe/qwerty123
+Admin user credentials admin/qwerty123
